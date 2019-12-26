@@ -8,6 +8,7 @@ class Blockchain(object):
     def __init__(self):
         self.chain = []
         self.current_transactions = []
+        # Add in consensus algorithm to allow for registering new nodes
 
         # Create the genesis block
         self.new_block(previous_hash=1, proof=100)
